@@ -1,3 +1,4 @@
+/* -----INICIO CSS CONTATO -----*/
 .header {
     background-color: #005975;
     padding: 10px 0;
@@ -43,7 +44,9 @@ margin: 0;
     cursor: pointer;
     font-weight: 500;
 }
+/*----- FINAL CSS CONTATO ----- */
 
+/* ----- INICIO CSS HOME ----- */
 .button-login {
     background-color: #00bff3;
     color: white;
@@ -182,7 +185,9 @@ margin: 0;
     height: 70px;
     margin: 0;
 }
+/* ----- FINAL CSS HOME ----- */
 
+/*----- INICIO CSS SOBRE NÓS ----- */
 .container-nos1 {
     margin: 0 auto;
     padding: 50px 30px;
@@ -230,7 +235,9 @@ margin: 0;
     margin-bottom: 20px;
     color: #444;
 }
+/*----- FINAL CSS SOBRE NÓS ----- */
 
+/*----- INICIO CSS CADASTRO ----- */
 .body-cadastro h1 {
     font-size: 33px;
     color: #ffffff;
@@ -381,12 +388,6 @@ button[type="submit"]:hover {
     width: 40%;
 }
 
-.filhol_login{
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 80%;
-    justify-self: center;
-}
 
 input{
     height: 25px;
@@ -401,6 +402,14 @@ input{
     justify-self: center;
     align-items: center;
     justify-content: center;
+}
+
+#span_usuario{
+    margin-left: 25px;
+}
+
+#span_tamanho,#span_num,#span_caracEsp,#span_caracESP{
+    margin-left: 25px;
 }
 
 input::placeholder {
@@ -423,7 +432,9 @@ input::placeholder {
     font-size: 12px;
     margin-top: 20px;
 }
+/*----- FINAL CSS CADASTRO ----- */
 
+/*----- INICIO CSS LOGIN ----- */
 .caixa-login{
     width: 40%;
     border: 20px solid #ffffff;
@@ -461,3 +472,11 @@ input::placeholder {
     margin-bottom: 30px;
     justify-self: center;
 }
+
+.filhol_login{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 80%;
+    justify-self: center;
+}
+/*----- FINAL CSS LOGIN ----- */
