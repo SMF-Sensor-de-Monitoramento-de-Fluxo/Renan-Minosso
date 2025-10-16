@@ -6,12 +6,8 @@
 
 
 /* -----INICIO CSS HOME -----*/
-
-.header {
-    background-color: #005975;
-    padding: 10px 0;
-    top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+html{
+    min-height: 100vh;
 }
 
 body {
@@ -28,12 +24,25 @@ body {
     .topicos-funciona {
         flex-direction: column;
     }
-}
-/*----- NAVBAR -----*/
 
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4vh 0;
+    height: 10vh;
+    margin: 0;
+    margin-top: 5vh;
+}
+
+/*----- NAVBAR -----*/
 header {
     background-color: #005a75e5;
-    padding: 10px 0;
+    padding: 0.8vw 0;
     top: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -42,8 +51,7 @@ header {
     backdrop-filter: blur(3px);
 }
 
-
-.header .container {
+header .container {
     margin: 0.5vh 4vw;
     display: flex;
     justify-content: space-between;
@@ -145,7 +153,7 @@ header {
 }
 
 .titulo-funciona {
-    color: rgb(0, 0, 0);
+    color:#005975;
     font-size: 5vh;
     font-weight: 800;
     text-align: center;
@@ -172,7 +180,8 @@ header {
     margin-bottom: 8px;
     font-size: 2.5vh;
     font-weight: bold;
-    color: #000;
+    color: #005975;
+    justify-self: center;
 }
 
 .topico p {
@@ -188,7 +197,7 @@ header {
 }
 
 .imagem-meio2 img {
-    width: 180px;
+    width: 17vh;
     height: auto;
     display: block;
 }
@@ -198,7 +207,7 @@ header {
     background-color: #005975;
     padding: 3% 8% 5% 8%;
     width: 80vw;
-    border-radius: 30px;
+    border-radius: 3vh;
     margin: 0 auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 0px;
@@ -222,7 +231,7 @@ header {
 
 .texto-meio3 ul {
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 2vw;
     color: white;
     font-size: 2.7vh;
     line-height: 1.6;
@@ -231,62 +240,91 @@ header {
 }
 
 .texto-meio3 img {
-    height: 35vh;
-    border-radius: 30px;
+    height: 40vh;
+    border-radius: 2vh;
 }
 
-.footer {
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 4vh 0;
-    height: 10vh;
-    margin: 0;
-    margin-top: 5vh;
-}
+
 /* ----- FINAL CSS HOME ----- */
 
 /*----- INICIO CSS SOBRE NÓS ----- */
+.titulo-sobre-nos{
+    padding: 15.6% 0 0 0;
+}
+
+.titulo-meio2 h3{
+    font-size: 2.5vw;
+    margin: 1.5vw auto -3vw auto;
+    color: #59b4cf;
+}
+
+.titulo-sobre-nos img{
+    width: 23vw;
+}
+
 .container-nos1 {
-    margin: 0 auto;
-    padding: 50px 30px;
-    border-radius: 15px;
+    width: 85vw;
+    margin: 2vh auto 18vh auto;
+    padding: 2.5vw 3vw;
+    border-radius: 30px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     font-family: "Poppins", sans-serif;
+    font-weight: 200;
     color: #333;
+    background-color: #f1f3e8;
 }
 
 .container-nos1 h3 {
     text-align: center;
-    font-size: 32px;
-    color: #ece7e7;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    font-size: 1.8vw;
+    color: #005975;
+    margin-bottom: 4vw;
+    margin-top: 3vw;
     position: relative;
 }
 
-.texto-nos1 p{
-    color: #ffffff;
+.container-nos1 p{
+    text-align: justify;
+    font-size: .98vw;
+    margin-bottom: 15px;
 }
 
-.container-nos1 p {
-    text-align: justify;
-    font-size: 17px;
-    margin-bottom: 15px;
+.nossa-equipe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
 }
 
 .texto-fotos {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 35px;
     margin: 30px 0;
+    width: 19vw;
 }
 
-.texto-nos1 .texto-fotos p {
-    color: #ffffff;
+.texto-fotos img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    object-fit: cover;
+}
+
+.texto-fotos p {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-size: 1vw;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #005975;
 }
 
 .texto-fotos img {
@@ -309,21 +347,48 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+h1 {
+    font-size: 3.6vh;
+    color: #005975;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.4vh;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
 /*----- FINAL CSS SOBRE NÓS ----- */
 
 /*----- INICIO CSS CONTATO ----- */
+.titulo-contato {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+}
+
+.titulo-contato h1{
+    color: #ddf8fc;
+}
+
+.titulo-contato h2{
+    color: #ddf8fc;
+}
+
 .form-container {
-    background-color: white;
+    background-color: #f1f3e8;
     padding: 30px 25px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    max-width: 450px;
+    max-width: 650px;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.form-wrapper {
+.form-alinhamento {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +396,7 @@ a {
 }
 
 .form-container h1 {
-    font-size: 28px;
+    font-size: 2.5vh;
     color: #005975;
     text-align: center;
     margin-bottom: 20px;
@@ -367,7 +432,7 @@ button[type="submit"] {
     width: 100%;
     padding: 12px;
     background-color: #005975;
-    color: white;
+    color: #f1f3e8;
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -392,7 +457,7 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 20px;
     background-color: #0b6caf;
-    color: white;
+    color: #f1f3e8;
     font-weight: bolder;
     padding: 0;
     transition: all 0.3s ease;
@@ -402,6 +467,7 @@ button[type="submit"]:hover {
     color: rgb(32, 32, 32);
     font-size: 15px;
 }
+
 /*----- FINAL CSS CONTATO ----- */
 
 /*----- INICIO CSS CADASTRO ----- */
